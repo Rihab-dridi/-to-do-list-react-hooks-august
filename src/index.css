@@ -11,3 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.todoListContainer{
+  background-color: antiquewhite;
+  padding: 20px;
+}
+.todoContainer{
+  background-color: burlywood;
+}
+.addTodoContainer{
+  background-color: cornsilk;
+  text-decoration: line-through;
+}
