@@ -14,14 +14,14 @@ export default function Todo({ task, deleteHandler, doneHandler }) {
     <div className="todoContainer">
       <h3
         className={task.isDone ? "done" : "undone"}
-        style={task.isDone ? { backgroundColor: "blue" } : {}}
+        style={task.isDone ? { textDecoration: "line-through" } : {}}
       >
         {" "}
         {task.text}{" "}
       </h3>
-      <div>
-        <button onClick={deleteTodo}> delete </button>
-        <button onClick={doneTodo}> {task.isDone ? "unDone" : "Done"} </button>
+      <div className='todoBtns' >
+        <button onClick={deleteTodo}> <i class="far fa-trash-alt"></i> </button>
+        <button onClick={doneTodo}> {task.isDone ? <i class="fas fa-check-circle"></i> :   <i class="far fa-check-circle"></i>}   </button>
       </div>
     </div>
   );

@@ -21,8 +21,9 @@ export default function AddTodo({ addHandler ,setInput,input}) {
         placeholder="add your task here"
         onChange={inputHandler}
         value={input}
+        autofocus
       />
-      <button onClick={addTodo}> Add </button>
+      <button onClick={addTodo}> <i class="fas fa-plus-square"></i> </button>
     </div>
   );
 }
